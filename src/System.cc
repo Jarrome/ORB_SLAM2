@@ -397,7 +397,7 @@ vector<cv::Mat> System::GetTrajectoryTUM()
     if(mSensor==MONOCULAR)
     {
         cerr << "ERROR: SaveTrajectoryTUM cannot be used for monocular." << endl;
-        return;
+        return vector<cv::Mat>();
     }
 
     vector<KeyFrame*> vpKFs = mpMap->GetAllKeyFrames();
