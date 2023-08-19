@@ -436,7 +436,7 @@ vector<cv::Mat> System::GetTrajectoryTUM()
 
         vector<float> q = Converter::toQuaternion(Rwc);
 
-	cv::Mat row = (cv::Mat_<float>(1,8,CV_32F) << float(*lT),
+	cv::Mat row = (cv::Mat_<float>(1,8,CV_32F) << iter->time,
 						twc.at<float>(0),
 						twc.at<float>(1),
 						twc.at<float>(2),
