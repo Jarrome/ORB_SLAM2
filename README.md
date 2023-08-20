@@ -1,4 +1,8 @@
 # Updates:
+* cpp version works good
+* python binding cause segfault when use cv::FileStorage to read settingfile. This is a bug for opencv4, opencv3 works fine on reading. 
+
+
 1. because `https://github.com/raulmur/ORB_SLAM2/pull/960` 's trajectory is wrong, now update their python code to this base
 2. add my need
 
